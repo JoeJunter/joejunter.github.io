@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Rent Negotiator </title>
+        <link rel="stylesheet" type="text/css" href="./CSS/SylesRentNegotiator.css">
+        <script type="module" src="./JS/query.js"></script>
+    </head>
+    <body>
+        <header>       
+            <nav Class = topNav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li> <a href="ContactUs.html">Useful Resources</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br><br><br>
+        <main>
+            <p>Please enter your information below:</p>
+
+            <form id="rent" action="">
+              Tenancy Start Date &nbsp;<input type="date" name="startDate" required><br><br>
+              Tenancy End Date &nbsp;<input type="date" name="endDate" required><br><br>
+              Previous Rent(pcm) <input type="number" name="prevRent" required><br><br>
+              Proposed Rent(pcm) <input type="number" name="propRent" required><br><br>
+              <input type="button" onclick="getRPI('2010 JUN','results')" value="Submit">
+            </form>
+
+            <p id="results"></p>
+            
+        </main>
+        <footer>
+        </footer>    
+    </body>
+</html>
